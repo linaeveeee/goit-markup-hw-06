@@ -1,8 +1,16 @@
+/* ---------------------MOBILE------------------------------- */
+
 @media screen and (min-width: 428px) {
   .container {
     max-width: 426px;
   }
+
+  .customers-item-link {
+    width: 190px;
+  }
 }
+
+/* ---------------------TABLET------------------------------- */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -16,11 +24,69 @@
   .advantages-item {
     width: calc((100% - 24px) / 2);
   }
+
+  .advantages-subtitle {
+    text-align: left;
+  }
+
+  .team > .container {
+    max-width: 582px;
+  }
+
+  .team-list {
+    gap: 64px 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .customers > .container {
+    max-width: 582px;
+  }
+
+  .customers-list {
+    gap: 72px 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+
+  .customers-item-link {
+    width: 168px;
+  }
+
+.footer > .container {
+    max-width: 582px;
+  }
+
+  .container-footer {
+  flex-wrap: wrap;
+flex-direction: row;
+gap: 72px 24px;
 }
+
+.container-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-input {
+  width: 264px;
+}
+
+/* ---------------------DESKTOP------------------------------- */
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+  }
+
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .advantages-list {
@@ -43,13 +109,69 @@
   }
 
   .advantages-subtitle {
-    text-align: start;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
   }
 
   .advantages-item-text {
-    font-weight: 400px;
+    font-weight: 400;
+  }
+
+  .projects {
+    padding-bottom: 120px;
+  }
+
+  .projects {
+    display: block;
+    padding-bottom: 120px;
+  }
+  .projects-title {
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  .projects-list {
+    display: flex;
+    gap: 24px;
+  }
+  .projects-item {
+    width: calc((100% - 2 * 24px) / 3);
+  }
+  .projects-img {
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team > .container {
+    max-width: 1158px;
+  }
+
+  .team-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .customers > .container {
+    max-width: 1158px;
+  }
+
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 5 * 24px) / 6);
   }
 }
