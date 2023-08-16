@@ -8,8 +8,19 @@
   .customers-item-link {
     width: 190px;
   }
+
+  .footer-input {
+    width: 398px;
+  }
+
+  .mob-tel-link {
+font-size: 36px;
 }
 
+.mob-socials-list {
+  gap: 56px;
+}
+}
 /* ---------------------TABLET------------------------------- */
 
 @media screen and (min-width: 768px) {
@@ -57,24 +68,68 @@
     width: 168px;
   }
 
-.footer > .container {
+  .footer > .container {
     max-width: 582px;
   }
 
   .container-footer {
-  flex-wrap: wrap;
-flex-direction: row;
-gap: 72px 24px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 24px;
+  }
+
+  .container-socials {
+  }
+
+  .footer-subtitle {
+    text-align: left;
+  }
+
+  .footer-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-input {
+    width: 264px;
+  }
+
+.hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg-tab.jpg);
 }
 
-.container-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+     background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg-tab-2x.jpg);
 }
+  }
 
-.footer-input {
-  width: 264px;
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
+
+  .hero-btn {
+    margin-top: 36px;
+  }
 }
 
 /* ---------------------DESKTOP------------------------------- */
@@ -174,4 +229,40 @@ gap: 72px 24px;
   .customers-item {
     width: calc((100% - 5 * 24px) / 6);
   }
+
+  .footer > .container {
+    max-width: 1158px;
+  }
+
+  .container-logo {
+    margin-right: 120px;
+  }
+
+  .container-subscribe {
+    margin-left: 80px;
+  }
+
+  .hero {
+    padding: 188px 0;
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  }
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+     background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg-2x.jpg);
+}
+  }
+
+  .hero-btn {
+    margin-top: 48px;
 }

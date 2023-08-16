@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo link" href="./index.html"
@@ -60,17 +60,106 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="icon-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <button type="button" class="menu-close-btn">
+          <svg class="icon-menu-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-menu-close-btn"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link current" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mob-address-list list">
+          <li class="mob-address-item">
+            <a class="mob-tel-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mob-address-item">
+            <a class="mob-mail-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-socials-list list">
+          <li class="mob-socials-item">
+            <a
+              class="mob-socials-link link"
+              href=""
+              target="
+            _blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-item">
+            <a
+              class="mob-socials-link link"
+              href=""
+              target="
+            _blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-item">
+            <a
+              class="mob-socials-link link"
+              href=""
+              target="
+            _blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-socials-item">
+            <a
+              class="mob-socials-link link"
+              href=""
+              target="
+            _blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="hero-btn" data-modal-open>
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="advantages">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
@@ -132,6 +221,7 @@
           <ul class="projects-list list">
             <li class="projects-item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 class="projects-img"
                 src="./images/img1.jpg"
                 alt="Computer"
@@ -141,6 +231,7 @@
             </li>
             <li class="projects-item">
               <img
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 class="projects-img"
                 src="./images/img2.jpg"
                 alt="Screenshots"
@@ -150,6 +241,7 @@
             </li>
             <li class="projects-item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 class="projects-img"
                 src="./images/img3.jpg"
                 alt="Smartphone"
@@ -166,6 +258,10 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/img-portrait1.jpg    1x,
+                  ./images/img-portrait1-2x.jpg 2x
+                "
                 class="team-img"
                 src="./images/img-portrait1.jpg"
                 alt="photo"
@@ -209,6 +305,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/img-portrait2.jpg    1x,
+                  ./images/img-portrait2-2x.jpg 2x
+                "
                 class="team-img"
                 src="./images/img-portrait2.jpg"
                 alt="photo"
@@ -252,6 +352,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/img-portrait3.jpg    1x,
+                  ./images/img-portrait3-2x.jpg 2x
+                "
                 class="team-img"
                 src="./images/img-portrait3.jpg"
                 alt="photo"
@@ -295,6 +399,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/img-portrait4.jpg    1x,
+                  ./images/img-portrait4-2x.jpg 2x
+                "
                 class="team-img"
                 src="./images/img-portrait4.jpg"
                 alt="photo"
