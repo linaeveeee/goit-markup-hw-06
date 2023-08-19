@@ -161,8 +161,32 @@
   .hero-btn {
     margin-top: 36px;
   }
-}
 
+  .portfolio-menu {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .portfolio-apps-list {
+    max-width: 600px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .menu-btn {
+    padding: 12px 24px;
+  }
+
+  .portfolio-menu-list {
+    margin-top: 64px;
+    gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
 /* ---------------------DESKTOP------------------------------- */
 
 @media screen and (min-width: 1158px) {
@@ -318,5 +342,23 @@
 
   .footer-list {
     margin-bottom: 0;
+  }
+
+  .portfolio-menu {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-apps-list {
+    margin-bottom: 72px;
+  }
+
+  .portfolio-menu-list {
+    gap: 24px;
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
   }
 }
